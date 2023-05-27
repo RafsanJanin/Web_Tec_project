@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Login</title>
+</head>
+<script src="script.js"></script> 
+</script>
+<body background="../asset/img1.png">
+	<form method="post" action="../controller/loginCheck.php">
+		<fieldset>
+		<h1 style="text-align:center;background-color:gray;">LOGIN</h1>
+			<br>
+			
+			<table align="center">
+				<tr>
+					<td>User ID:</td>
+				</tr>
+				<tr>
+                    <td><input type="text" name="username" value=""></td>
+				</tr>
+				
+				<tr>
+					<td>Password:</td>
+				</tr>
+				<tr>	
+					<td><input type="password" name="password" value=""></td>
+
+				</tr>
+				<tr>
+					<td><input type="submit" name="Login" value="Login" onsubmit="return formValidation();"></td>
+					<td><a href="../views/signup.html"style="color: black;background-color:AntiqueWhite;text-decoration:none;">Registration </a></td>
+				</tr>
+
+			</table>
+			</fieldset>
+
+	</form>
+</body>
+</html>

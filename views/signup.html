@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<script>  
+function validateform2(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  } 
+  else if(phone.length<11){  
+  alert("phone No must be at least 11 characters long.");  
+  return false;  
+  } 
+  if else(email==null || email==""){  
+  alert("Name can't be blank");  
+  return false; 
+
+}  
+</script>
+<body background="../asset/img1.png">
+	<form method="post" action="signupCheck.php">
+		<fieldset>
+			<h1 style="text-align:center;background-color:gray;">REGISTRATION</h1>
+			<table align="center">
+				<tr>
+					<td>ID:</td>
+					<td><input type="text" name="ID" value=""></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password" value=""></td>
+				</tr>
+				<tr>
+					<td>Phone No:</td>
+					<td><input type="text" name="phone" value=""></td>
+				</tr>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" name="name" value=""></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="email" name="email" value=""></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><input type="submit" name="submit" value="Submit" onclick="return validateform2()"></td>
+					<td><a href="login.html"style="color: black;background-color:AntiqueWhite;text-decoration:none;">LogIn </a></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>
